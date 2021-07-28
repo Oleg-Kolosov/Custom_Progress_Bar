@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.progress-indicator {
+    width: 300px;
+}
+
+.progress-indicator p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background: #ddd;
+}
+
+.progress-bar::-webkit-progress-value {
+    background: #12c2e9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #f64f59,
+        #c471ed,
+        #12c2e9
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #f64f59,
+        #c471ed,
+        #12c2e9
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
